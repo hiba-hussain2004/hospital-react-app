@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import HospitalNav from './HospitalNav'
 
 const View = () => {
      const [data,changeData]=useState([])
@@ -20,6 +21,7 @@ const View = () => {
     )
   return (
     <div>
+        <HospitalNav/>
         <div className="container mt-4">
         <h2 className="text-center mb-4">View All Employees</h2>
 
@@ -32,11 +34,11 @@ const View = () => {
               <th>Gender </th>
               <th>  Blood Group</th>
              
-              <th>Email Address</th>
-              <th>Disease / Health Complaint</th>
-              <th>Doctor Assigned</th>
+              <th>Doctor</th>
+              <th>Disease </th>
+              <th>Room Number</th>
               <th>Admission Date</th>
-              <th> Room Number</th>
+              <th> Mobile Number</th>
               
             </tr>
           </thead>
